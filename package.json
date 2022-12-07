@@ -1,0 +1,22 @@
+{
+  "description": "Controlling log output and exporting",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build:types": "tsc -b ./tsconfig.types.json",
+    "build": "npm run build:types && rollup -c --bundleConfigAsCjs"
+  },
+  "devDependencies": {
+    "rollup": "^3.6.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.3"
+  },
+  "author": "lucklin",
+  "email": "502763576@qq.com",
+  "homepage": "https://github.com/LuckLin520/ourlogger#readme",
+  "license": "MIT"
+}
